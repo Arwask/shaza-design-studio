@@ -7,7 +7,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: #fcfcfc;
-  --primary-color: #4756df;
+  --primary-color: #2c6e3c;
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -58,7 +58,7 @@ nav {
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
     background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
   }
 
   nav h1 {
@@ -90,6 +90,10 @@ nav {
     background-color: transparent;
     cursor: pointer;
     display: none;
+  }
+
+  .logo-img {
+    width: 20%;
   }
 
   /* Hero section */
@@ -143,20 +147,53 @@ nav {
     padding: 0.4rem;
   }
 
+
+  /* PROJECTS */
+  .projects {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;
+  }
+  
+  .project-pic {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .projects-title {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .projects-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .project-container {
+    text-align: center;
+    width: 21.875rem;
+  }
+
+.project-card {
+  background-color: #fff;
+}
+
   /* Skills */
 
-  .projects {
+  .skills {
     max-width: 68.75rem;
     margin: auto;
     text-align: center;
     margin-top: 2.5rem;
   }
   
-  .project-header {
+  .skill-header {
     margin-bottom: 1rem;
   }
   
-  .projects-wrapper img {
+  .skills-wrapper img {
     padding: 1.25rem;
   }
   
@@ -341,6 +378,14 @@ nav {
       .contact-form-container {
         max-width: 23.75rem;
       }
+
+      .projects-container {
+        flex-direction: column;
+      }
+    
+      .project-container {
+        width: 20.875rem;
+      }
   }
 
   @media screen and (max-width: 420px) {
@@ -353,7 +398,7 @@ nav {
       width: 18.3rem;
     }
   
-    .project-container {
+    .skill-container {
       width: 17.875rem;
     }
   
