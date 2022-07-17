@@ -69,6 +69,7 @@ nav {
   nav a {
     color: var(--primary-color);
     transition: var(--transition);
+    font-size: 30px;
   }
   nav a:hover {
     color: var(--secondary-color);
@@ -176,10 +177,19 @@ nav {
     padding: 32px 0;
     margin-top: 2rem;
   }
+
+  .projects h2 {
+    font-size: 50px;
+    text-align: left;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+  }
   
   .project-pic {
-    width: 100%;
-    height: 60%;
+    padding: 3px;
+    text-align: center;
+    width: 21.875rem;
+    max-height: 400px;
   }
   
   .projects-title {
@@ -189,9 +199,13 @@ nav {
 
   .projects-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow-x: auto;
+    /* align-items: stretch;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; */
   }
+  .projects-container::-webkit-scrollbar {    display: none;}
   
   .project-container {
     text-align: center;
@@ -408,9 +422,9 @@ nav {
         max-width: 23.75rem;
       }
 
-      .projects-container {
+      /* .projects-container {
         flex-direction: column;
-      }
+      } */
     
       .project-container {
         width: 20.875rem;
