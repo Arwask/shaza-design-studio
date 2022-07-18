@@ -58,7 +58,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background: transparent;
+    background: rgba(255,255,255,0.2);;
 
   }
 
@@ -179,10 +179,15 @@ nav {
   }
 
   .projects h2 {
+    font-family: 'Great Vibes', cursive;
     font-size: 50px;
-    text-align: left;
+    text-align: center;
     color: var(--primary-color);
     padding-bottom: 10px;
+  }
+
+  .displayh2 {
+    display: none;
   }
   
   .project-pic {
@@ -317,13 +322,14 @@ nav {
     display: flex;
     flex-direction: column;
     position: fixed;
-    right: 1%;
+    left: 95%;
     bottom: 50%;
   }
   
   .socicon {
-    width: 2rem;
-    height: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 23%;
   }
 
   /* Footer */
@@ -338,7 +344,7 @@ nav {
   /* scroll-up button */
   .scroll-up {
     position: fixed;
-    right: 0.5%;
+    left: 94%;
     bottom: 3%;
     cursor: pointer;
   }
@@ -346,6 +352,7 @@ nav {
   .up-arrow {
     width: 3rem;
     height: 3rem;
+    border-radius: 100%;
   }
 
   /* media response */
