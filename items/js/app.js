@@ -67,8 +67,8 @@ function load3DImages() {
   }
 }
 window.onload = () => {
-  (resImages.length > 0) ? loadResImages() : (document.getElementById('res-h2').setAttribute('class',"displayh2"));
-  (comImages.length > 0) ? loadComImages() : (document.getElementById('com-h2').setAttribute('class',"displayh2"));
-  (threeDImages.length > 0) ? load3DImages(): (document.getElementById('3d-h2').setAttribute('class',"displayh2"));
+  (resImages.length > 0) ? loadResImages() : (document.getElementById('res-h2').parentElement.setAttribute('class',"displayh2"));
+  (comImages.length > 0) ? loadComImages() : (document.getElementById('com-h2').parentElement.setAttribute('class',"displayh2"));
+  (threeDImages.length > 0) ? load3DImages(): (document.getElementById('3d-h2').parentElement.setAttribute('class',"displayh2"));
 
 }

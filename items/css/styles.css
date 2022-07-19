@@ -7,7 +7,7 @@
   --bold-font: 700;
   --bolder-font: 900;
   --bg-color: white;
-  --primary-color: #2c6e3c;
+  --primary-color: rgb(44, 110, 60);
   --secondary-color: #ff7235;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
@@ -122,12 +122,14 @@ nav {
   /* Hero section */
 
   .hero {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
+    justify-content: flex-end;
     margin: auto;
+    flex-wrap: wrap;
   }
 
   /* Image css */
@@ -138,7 +140,8 @@ nav {
   }
   
   .bio {
-    width: 25rem;
+    width: 40%;
+    background: rgba(255,255,255,0.7);
     padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
@@ -175,14 +178,19 @@ nav {
   .projects {
     background-color: var(--bg-color);
     padding: 32px 0;
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   .projects h2 {
-    font-family: 'Great Vibes', cursive;
+    background: rgba(133,0,0,0.5);
+    font-family: var(--font-family);
+    width: 40%;
+    position: absolute;
+    bottom: -22%;
+    margin: 0 auto;
     font-size: 50px;
     text-align: center;
-    color: var(--primary-color);
+    color: white;
     padding-bottom: 10px;
   }
 
@@ -251,6 +259,8 @@ nav {
     box-shadow: 0 3px 10px var(--secondary-shadow);
     padding: 20px;
     margin: 10px;
+    width: 100px;
+    height: 100px;
   }
 
   /* Contact */
@@ -362,12 +372,16 @@ nav {
         padding: 1.5rem 1rem;
       }
 
+      nav a{
+        font-size: 15px;
+      }
+  
       nav ul {
         position: fixed;
         background-color: transparent;
         flex-direction: column;
         top: 15%;
-        left: 40%;
+        left: 45%;
         width: 50%;
         text-align: center;
         transform: translateX(120%);
@@ -394,11 +408,6 @@ nav {
         flex-direction: column;
         gap: 0;
       }
-    
-      .hero img {
-            height: 37.5rem;
-            width: 30rem;
-        }
     
       .bio {
         margin-top: -7rem;
@@ -436,13 +445,23 @@ nav {
       .project-container {
         width: 20.875rem;
       }
+
+      .socicon{
+        width:1.5rem;
+        height: 1.5rem;
+      }
+
+      .socials {
+        left: 90%;
+      }
+
+      .scroll-up {
+        left: 90%;
+      }
   }
 
-  @media screen and (max-width: 420px) {
-    .hero img {
-      height: 37.5rem;
-      width: 23rem;
-    }
+  @media screen and (max-width: 425px) {
+
   
     .bio {
       width: 18.3rem;
@@ -454,5 +473,39 @@ nav {
   
     .contact-form-container {
       max-width: 17.75rem;
+    }
+  }
+
+  @media screen and (max-width: 370px) {
+
+    .bio {
+      position: absolute;
+      right: 35px;
+      bottom: 10px;
+      font-size: 13px;
+    }
+
+    .socials {
+      left: 90%;
+    }
+
+    nav a{
+      font-size: 15px;
+    }
+
+    nav ul {
+      left: 45%;
+    }
+
+    .scroll-up {
+      left:90%;
+    }
+
+    .socicon{
+      width:1.5rem;
+      height: 1.5rem;
+    }
+    .projects h2 {
+      font-size: 35px;
     }
   }
